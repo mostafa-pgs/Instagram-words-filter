@@ -1,0 +1,131 @@
+a{
+	font-family: tahoma,arial;
+	font-size: 13px;
+}
+body
+{
+	min-width: 340px;
+	font-family: tahoma,arial;
+}
+h2{
+	color: #636767;
+	border-bottom: 1px solid #eaeaea;
+	font-weight: normal;
+}
+section{
+	margin-bottom: 23px;
+}
+#alert
+{
+	font-size:12px;font-family:tahoma,arial;padding:20px; min-width:340px;min-height:80px;
+}
+section#stage {
+float: left;
+margin-right: 10px;
+}
+.slider-frame{
+	position: relative;
+	padding: 5px 10px;
+	border-radius: 10px;
+	height: 16px;
+	-webkit-transition: all 0.45s ease-in-out;
+	transition: all 0.45s ease-in-out;
+	width: 55px;
+	cursor: pointer;
+}
+.slider-frame.on{
+	background: #88c92d;
+}
+.slider-frame.off{
+	background: #fc6450;
+}
+#stage .slider-frame .slider-button
+{
+	position: absolute;
+	top: 3px;
+	border-radius: 50%;
+	background: #fff;
+	box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.3);
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	color: #fff;
+	-webkit-transition: all 0.45s ease-in-out;
+	transition: all 0.45s ease-in-out;
+}
+.slider-frame.on .slider-button
+{
+	left: 6px;
+}
+.slider-frame.off .slider-button
+{
+	right: 6px;
+}
+.slider-text{
+	position: absolute;
+	top: 5px;
+	color: #fff;
+	-webkit-transition: all 0.55s ease-in-out;
+	transition: all 0.55s ease-in-out;
+	font-size: 14px;
+}
+.slider-frame.on .slider-text
+{
+	right: 10px;
+}
+.slider-frame.off .slider-text
+{
+	left: 10px;
+}
+.lbl {
+color: #939393;
+font-family: tahoma;
+margin-top: 20px;
+font-size: 14px;
+}
+input#enabled {
+display: none;
+}
+.msg{
+	color: #969696;
+	font-size: 11px;
+	clear: both;
+}
+#word
+{
+	border: 2px solid #d9d9d9;
+	display: inline-block;
+	width: 230px;
+	padding: 5px;
+	border-radius: 5px;
+}
+#add
+{
+	border: 2px solid #c2c2c2;
+	color: #7f7f7f;
+	border-radius: 5px;
+	background: #fff;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+#add:hover{
+	background: #88c92d;
+	color: #fff;
+}
+.tag {
+float: left;
+margin-right: 20px;
+padding: 3px 10px;
+background: #eaeaea;
+text-align: left;
+font-size: 12px;
+color: #444242;
+}
+.tag span {
+color: rgb(250, 246, 246);
+margin-left: 10px;
+cursor: pointer;
+}
+.tag span:hover{
+	color:rgb(255, 105, 105);
+}

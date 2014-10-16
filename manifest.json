@@ -1,0 +1,31 @@
+{
+   "background": {
+      "scripts": ["js/jmin.js","background.js"]
+   },
+   "browser_action": {
+      "default_icon": "images/icon.png",
+      "default_popup": "popup.html",
+      "default_title": "#Nazan"/*__MSG_extension_hint__*/
+   },
+   "content_scripts": [ {
+      "js": [ "js/jmin.js" , "js/content.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   /*"default_locale": "en",*/
+   "description": "Keep calm and #Nazan",
+   "icons": {
+      "128": "images/main_128.png",
+      "16": "images/main_16.png",
+      "24": "images/main_24.png",
+      "32": "images/main_32.png",
+      "48": "images/main_48.png",
+      "64": "images/main_64.png"
+   },
+   "manifest_version": 2,
+   "name": "#Nazan",
+   "permissions": [ "tabs", "webRequest", "http://*/*", "https://*/*", "cookies", "webRequestBlocking", "storage", "management" ],
+   "short_name": "Downloader",
+   "version": "1.0",
+   "web_accessible_resources": [ "*" ]
+}
